@@ -9,7 +9,7 @@ class ShowAlbum extends Component {
 
         return {
             id: props.query.id,
-            album:album
+            album: album
         };
     }
 
@@ -19,21 +19,35 @@ class ShowAlbum extends Component {
 
 
                 <Card>
-                <Image src={`${this.props.album.image}`} wrapped ui={false} />
+                    <Image src={`${this.props.album.image}`} wrapped ui={false} />
                     <Card.Content>
                         <Card.Header>{this.props.album.title}</Card.Header>
                         <Card.Meta>
                             <span className='date'>{this.props.album.author}</span>
                         </Card.Meta>
                         <Card.Description>
-                        {this.props.album.description.substring(0, 200).concat("...")}
+                            {this.props.album.description.substring(0, 200).concat("...")}
                         </Card.Description>
+                        <Card.Meta></Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
-                        <a>
-                            <Icon name='user' />
-                            Janek
-                        </a>
+                        <Grid >
+                            <Grid.Row columns={2}>
+                                <Grid.Column>
+                                    <Icon name='user' />
+                                    {this.props.album.owner}
+
+                                </Grid.Column>
+                                <Grid.Column>
+                                    Price: {this.props.album.price}
+                                </Grid.Column>
+                            </Grid.Row>
+                            <Grid.Row columns={1} stretched>
+                                <Grid.Column >
+                                    <Button  >Buy</Button>
+                                </Grid.Column>
+                            </Grid.Row>  
+                        </Grid>
                     </Card.Content>
 
                 </Card>
