@@ -1,3 +1,3 @@
-run with:
-npm install --legacy-peer-deps
+run with:<br/>
+npm install --legacy-peer-deps <br/>
 npm run dev
