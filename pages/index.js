@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
-import Layout from "../../components/Layout";
-import albumService from "../../service/albumService"
-import { Link } from "../../routes";
+import Layout from "../components/Layout";
+import albumService from "../service/albumService"
+import { Link } from "../routes";
 
 class AlbumIndex extends Component {
     render() {
