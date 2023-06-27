@@ -27,7 +27,7 @@ class NewAlbum extends Component {
         }
         albumService.addAlbum(album);
         this.state.loading = false;
-        Router.pushRoute("/albums/");
+        Router.pushRoute("/");
     }
 
     render() {

@@ -35,6 +35,7 @@ class AlbumService {
         return this.albumList;
     }
     addAlbum = (album) => {
+        album.id= this.nextId();
         this.albumList = this.albumList.concat(album);
     }
     nextId = () => {

@@ -5,7 +5,7 @@ import { Link } from "../routes";
 
 const renderMenu = () => {
   const items = [
-    { key: 'albums', active: true, name: 'Albums', as: 'a', href: '/albums' },
+    { key: 'albums', active: true, name: 'Albums', as: 'a', href: '/' },
     { key: 'new', name: 'New Album', as: "a", href: '/albums/new' },
   ];
 
